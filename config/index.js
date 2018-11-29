@@ -19,7 +19,7 @@ const config = {
     javaServerUrl:'',
     expires: 200 * 60 * 1000,
     ttl:60*60,//过期时间 秒
-    session_secret: '23212@!#@asdfad34dfsfaskdjfasd',
+    session_secret: 'xzcmasadajjhnad@!#@Echonessy(*&$%NBN%$%^HK(Yjhgjhgjhg)',
     auth_cookie_name: 'connect.sid',
     // newrelic 是个用来监控网站性能的服务
     newrelic_key: 'yourkey',
