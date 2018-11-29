@@ -1,5 +1,5 @@
 /**
- * Created by cuimb on 2015/5/24.15:17
+ * Created by Echonessy on 2015/5/24.15:17
  * http响应常用方法
  */
 var logger = require('./log4node.js');
