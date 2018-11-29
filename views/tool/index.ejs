@@ -1,0 +1,107 @@
+<%include ../layout/webheader.ejs%>
+<link rel="stylesheet" href="/static/css/tool/index.css">
+
+<div class="container Reset" >
+    <div class="Single">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="Logo">
+                    <img src="/static/images/echonessy/logow.png" alt="">
+                    <div class="Title">Echonessy 内部接口调试工具</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Menu">
+        <p class="SmallTit">是否需要分离请求地址:</p>
+        <form class="layui-form SwitchBox">
+            <input type="checkbox" id="SwitchHeader" name="switch" lay-filter="switchUrl" lay-text="ON|OFF" lay-skin="switch">
+        </form>
+        <p class="SmallTit BorL">选择交互方式:</p>
+        <ul class="MenuList">
+            <li class="TabBtn">Request Body</li>
+            <li class="TabBtn">Request Key-Value</li>
+            <li id="Line"></li>
+        </ul>
+        <p class="SmallTit">是否需要Headers:</p>
+        <form class="layui-form SwitchBox">
+            <input type="checkbox" id="SwitchHeader" name="switch" lay-filter="switchTest" lay-text="ON|OFF" lay-skin="switch">
+        </form>
+        <button type="button" class="btn btn-primary SendBtn" data-iSwitch="false" data-iPos="0" id="SendBtn">Send</button>
+    </div>
+
+    <div class="Single Target" id="TotalIp">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="LabTitle">目标地址：</p>
+                <input type="text" id="IpUrl" value="http://192.168.88.56:8700/v1/mobile/verifiCode" class="form-control LabInput">
+            </div>
+        </div>
+    </div>
+
+    <div class="Single Target dino" id="SplitIp">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="LabTitle">目标IP：</p>
+                <input type="text" id="Ip" class="form-control LabInput" value="http://192.168.88.56:8700">
+            </div>
+            <div class="col-md-6">
+                <p class="LabTitle">目标地址：</p>
+                <input type="text" id="IpTarget" class="form-control LabInput"  value="/v1/mobile/verifiCode" >
+            </div>
+        </div>
+    </div>
+
+    <!--Headers-->
+    <div class="Single Target dino" id="ShowHeaders">
+        <div class="ConTitle"><p> <i class="layui-icon layui-icon-note"></i>Headers</p></div>
+        <div style="clear: both;"></div>
+        <div class="row Mt15" id="HeaderList">
+            <div class="col-md-10 Item">
+                <p class="keylab">Key：</p>
+                <input type="text" class="form-control KeyInput" value="">
+                <p class="keylab">Value：</p>
+                <input type="text" class="form-control KeyInput" value="">
+                <button class="layui-btn layui-btn-sm layui-btn-normal DelBtn"><i class="layui-icon"></i> 删除</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="Content" id="Content">
+        <div class="ConBoxItem">
+            <div class="row ">
+                <div class="col-md-6">
+                    <div class="ConTitle"><p> <i class="layui-icon layui-icon-code-circle"></i>Request请求</p></div>
+                    <textarea class="JsonBox" name="" id="JsonBox" cols="30" rows="10"></textarea>
+                </div>
+                <div class="col-md-6">
+                    <div class="ConTitle"><p> <i class="layui-icon layui-icon-website"></i>Response响应</p></div>
+                    <textarea class="JsonBox" name="" id="JsonResponse" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="ConBoxItem dino">
+            <div class="row ">
+                <div class="col-md-12">
+                    <div class="ConTitle"><p> <i class="layui-icon layui-icon-code-circle"></i>Request请求</p></div>
+                    <div style="clear: both;"></div>
+                    <div class="row Mt15" id="KeyList">
+                        <div class="col-md-10 Item">
+                            <p class="keylab">Key：</p>
+                            <input type="text" class="form-control KeyInput" value="">
+                            <p class="keylab">Value：</p>
+                            <input type="text" class="form-control KeyInput" value="">
+                            <button class="layui-btn layui-btn-sm layui-btn-normal DelBtn"><i class="layui-icon"></i> 删除</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="ConTitle"><p><i class="layui-icon layui-icon-website"></i>Response响应</p></div>
+                    <textarea class="JsonBox" name="" id="KeyValueResponse" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/static/javascirpt/tool/index.js"></script>
+<%include ../layout/nullfooter.ejs%>

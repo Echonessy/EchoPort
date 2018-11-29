@@ -1,0 +1,35 @@
+html{font-size:16px;font-family:"Microsoft Yahei",helvetica,arial,sans-serif;word-break:break-word;}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, code, em, img, q, small, strong, dd, dl, dt, li, ol, ul, fieldset, form, label, table, tbody, tr, th, td, input,figure{ margin: 0; padding: 0; border: 0;}
+body{color: #000;position: relative;}
+table{border-collapse:collapse;border-spacing:0;}
+img{vertical-align: middle;}
+address,caption,cite,code,dfn,em,i,strong,th,var{font-style:normal;font-weight:normal;}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {display: block;}
+ol,ul{list-style:none;}
+caption,th{text-align:left;}
+q:before,q:after{content:'';}
+abbr,acronym{border:0;}
+h1,h2,h3,h4,h5{font-size:100%;font-weight:normal;}
+a{
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Trends';
+    src: url('../fonts/trends/trends .eot');
+    src: url('../fonts/trends/trends .eot?#iefix') format('embedded-opentype'),
+    url('../fonts/trends/trends .woff2') format('woff2'),
+    url('../fonts/trends/trends .woff') format('woff'),
+    url('../fonts/trends/trends .ttf') format('truetype'),
+    url('../fonts/trends/trends .svg#glyphicons_halflingsregular') format('svg');
+}
+
+@font-face {
+    font-family: 'Fzxs';
+    src: url('../fonts/fzxs/fzxs.eot');
+    src: url('../fonts/fzxs/fzxs.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/fzxs/fzxs.woff2') format('woff2'),
+    url('../fonts/fzxs/fzxs.woff') format('woff'),
+    url('../fonts/fzxs/fzxs.ttf') format('truetype'),
+    url('../fonts/fzxs/fzxs.svg#glyphicons_halflingsregular') format('svg');
+}

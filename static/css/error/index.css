@@ -1,0 +1,8 @@
+html,body{background: #FAFAFA;}
+.Single,.Title{float: left;width: 100%;box-sizing: border-box;}
+.Title{margin-top: 30px;}
+.Top,.Txt{text-align: center;font-family: Trends;}
+.Top{font-size: 30px;line-height: 40px;margin-top: 30px; font-weight: bold;margin-bottom: 20px;}
+.Txt{font-size: 22px;line-height: 30px;}
+.ImgBox{overflow: hidden;}
+.ImgBox img{max-width: 100%;}

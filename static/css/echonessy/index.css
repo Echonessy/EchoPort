@@ -1,0 +1,7 @@
+
+
+.Content,.Logo,.Single,.Poetry{float: left;box-sizing: border-box;width: 100%;}
+.Logo{height: 100px;text-align: center;margin-top: 60px;}
+.Logo>img{width: 80px;}
+.Title{padding: 40px; font-family: Trends;font-size: 30px;text-align: center;line-height: 50px;}
+
